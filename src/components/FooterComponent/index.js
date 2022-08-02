@@ -4,7 +4,7 @@ import Wrapper from './styles';
 function FooterComponent() {
   return (
     <Wrapper>
-      <div className='footer-container'>
+      <div data-testid="footer" className='footer-container'>
         <div className='footer-circles'>
             <div className='footer-circle'>1</div>
             <div className='footer-circle'>2</div>
