@@ -4,10 +4,15 @@ import ContentComponent from "../index";
 
 describe('Content Component tests', () => {
     it('Should render Content Component with subtitle & content', () => {
-        render(<ContentComponent />);
-        expect(screen.getByTestId('subtitle')).toBeInTheDocument();
-        expect(screen.getByTestId('content')).toBeInTheDocument();
-        // Button is optional within this component - should be taken out into it's own separate component?
-        // expect(screen.getByRole('button', {name: /learn more/i})).toBeInTheDocument()
+        render(<ContentComponent subtitle="subtitle" content="content" />);
+        
+        expect(screen.getByText('subtitle')).toBeInTheDocument();
+        expect(screen.getByText('content')).toBeInTheDocument();
+        expect(screen.getByRole('button', {name: /learn more/i})).toBeInTheDocument()
     });
+    it('Should render Content Compnent with no button', () => {
+        render(<ContentComponent noBtn/>)
+
+        expect(screen.queryByRole('button', {name: /learn more/i})).not.toBeInTheDocument()
+    })
 });
