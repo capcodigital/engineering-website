@@ -5,6 +5,9 @@ const Wrapper = styled.div`
     display: grid;
     background-color: #000;
     padding: 50px 24px;
+    @media screen and (max-width: 412px) {
+      text-align: center;
+    }
   }
 
   .explore-title {
