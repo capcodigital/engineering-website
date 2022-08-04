@@ -30,28 +30,34 @@ function NavBar() {
                   <span className="logo-text">Engineering</span>
                 </div>
               </Typography>
-              <Button color="inherit" className="nav-links">
+              <Button color="inherit" className="nav-button">
                 Capabilities
               </Button>
-              <Button color="inherit" className="nav-links">
+              <Button color="inherit" className="nav-button">
                 Team
               </Button>
               <a
                 href="https://www.capco.com/Careers"
                 target="blank"
                 rel="noreferrer"
+                className="nav-links"
               >
-                <Button color="inherit" className="nav-links">
+                <Button color="inherit" className="nav-button">
                   Career
                 </Button>
               </a>
-              <Button color="inherit" className="nav-links">
+              <Button color="inherit" className="nav-button">
                 Articles
               </Button>
-              <a href="https://www.capco.com" target="blank" rel="noreferrer">
-                <Button color="inherit" className="nav-links">
+              <a
+                href="https://www.capco.com"
+                target="blank"
+                rel="noreferrer"
+                className="nav-links"
+              >
+                <Button color="inherit" className="nav-button">
                   Capco.com
-                </Button>{" "}
+                </Button>
               </a>
             </Toolbar>
           </AppBar>

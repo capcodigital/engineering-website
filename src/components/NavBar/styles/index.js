@@ -8,13 +8,15 @@ const Wrapper = styled.div`
   }
 
   .nav-links {
-      font-size: 12px;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
   }
 
   .capco-logo {
     width: 85px;
     height: 30.38px;
-    left: calc(50% - 170px/2 - 715px);
+    left: calc(50% - 170px / 2 - 715px);
   }
 
   .logo-text {
@@ -22,15 +24,15 @@ const Wrapper = styled.div`
     width: auto;
     padding-top: -10px;
     // padding-bottom: 23px;
-    
   }
-  .capco-logo, .logo-text {
+  .capco-logo,
+  .logo-text {
     display: inline-block;
   }
 
-  .logo-text, .nav-links {
-      font-family: 
-      Ubuntu Mono;
+  .logo-text,
+  .nav-links {
+    font-family: Ubuntu Mono;
   }
 `;
 
