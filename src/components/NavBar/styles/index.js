@@ -7,32 +7,26 @@ const Wrapper = styled.div`
     grid-gap: 20px;
   }
 
-  .nav-links {
+  .nav-links, .nav-button {
     font-size: 12px;
     text-decoration: none;
     color: white;
+    font-family: 'Ubuntu Mono', Sans;
   }
 
   .capco-logo {
     width: 85px;
     height: 30.38px;
     left: calc(50% - 170px / 2 - 715px);
+    display: inline-block;
   }
 
   .logo-text {
     height: auto;
     width: auto;
     padding-top: -10px;
-    // padding-bottom: 23px;
-  }
-  .capco-logo,
-  .logo-text {
+    font-family: 'Ubuntu Mono', Sans;
     display: inline-block;
-  }
-
-  .logo-text,
-  .nav-links {
-    font-family: Ubuntu Mono;
   }
 `;
 
