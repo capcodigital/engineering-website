@@ -2,32 +2,43 @@ import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
 .contact-container {
+    display: grid; 
+    grid-template-columns: 60% 1fr;
+    grid-gap: 4%;
+    padding: 120px 24px;
     background-color: #fff;
-    color: #000; 
-    height: auto;
-    display: flex; 
-    padding: 120px 80px;
+    color: #000;
     align-items: center;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 }
 
 .contact-text {
-    width: 60%;
+    grid-column: span 1;
     font-size: 36px;
     line-height: 50px;
 }
 
 .contact-buttons {
+    grid-column: span 1;
     display: grid;
-    grid-template-columns: repeat(2, min-content);
-    column-gap: 45px;
+    grid-auto-flow: column;
+    grid-gap: 6%;
     justify-content: center;
-    height: 100%;
-    width: 40%;
+    @media screen and (max-width: 1045px) {
+        grid-auto-flow: row;
+        grid-gap: 14%;
+    }
+    @media screen and (max-width: 768px) {
+        grid-auto-flow: column;
+        grid-gap: 6%;
+    }
 }
 
 .contact-button {
-    height: 52px;
-    width: 192px;
+    padding: 14px 40px;
     background-color: #18A0FB;
     color: #000;
     border: 2px solid #18A0FB;
