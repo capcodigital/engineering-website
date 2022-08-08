@@ -14,7 +14,6 @@ const Wrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 6%;
-    // margin: 100px 597px;
     align-items: center;
     justify-items: center;
   }
