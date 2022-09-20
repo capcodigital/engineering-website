@@ -20,6 +20,24 @@ export const Wrapper = styled.div`
     font-family: Ubuntu Mono, Sans;
   }
 
+  .nav-item {
+    font-family: Ubuntu Mono;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: gray;
+    }
+
+    &:active {
+      color: #18A0FB;
+    }
+  }
+
+  
+
   .MuiButton-text {
     font-family: Ubuntu Mono;
     font-size: 18px;
@@ -42,5 +60,16 @@ export const StyledDrawer = styled(Drawer)`
   .MuiTypography-root {
     font-family: Ubuntu Mono;
     font-size: 22px;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    &:hover {
+      color: gray;
+    }
+
+    &:active {
+      color: #18A0FB;
+    }
   }
 `
