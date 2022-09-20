@@ -2,15 +2,18 @@ import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
   .culture-container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
     background-color: #000;
-    padding: 120px 124px;
+    padding: 120px 24px;
     color: #fff;
     justify-items: center;
+    align-items: center;
     text-align: center;
   }
 
   .culture-title {
-    margin:0;
+    grid-column: 1 / span 3;
     color: #fff;
     font-size: 48px;
     font-family: 'Montserrat';
@@ -18,6 +21,7 @@ const Wrapper = styled.div`
   }
 
   .culture-subtitle {
+    grid-column: 1 / span 3;
     margin: 50px 0;
     color: #fff;
     font-size: 36px;
@@ -26,19 +30,27 @@ const Wrapper = styled.div`
   }
 
   .culture-employees {
+    grid-column: 2 / span 1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 84px;
-    row-gap: 64px;
-    margin: 100px 244px;
-    align-items: center;
-    justify-items: center;
+    grid-gap: 30px 6%;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 412px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .culture-employee {
-    min-height: 76px;
     width: 100%;
-    background-color: grey;
+    height: 100%;
+  }
+
+  .employee-image {
+    width: 100%;
+    height: 100%;
   }
 
 `;
