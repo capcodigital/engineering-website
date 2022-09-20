@@ -11,10 +11,10 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
+import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
 
 function NavBar(props) {
   const { window } = props;
@@ -27,13 +27,11 @@ function NavBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <List className='drawer-list'>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <ListItem disablePadding><ListItemButton sx={{ textAlign: 'center' }}><ListItemText><Link href="#" className='nav-item'>Capabilities</Link></ListItemText></ListItemButton></ListItem>
+        <ListItem disablePadding><ListItemButton sx={{ textAlign: 'center' }}><ListItemText><Link href="#" className='nav-item'>Team</Link></ListItemText></ListItemButton></ListItem>
+        <ListItem disablePadding><ListItemButton sx={{ textAlign: 'center' }}><ListItemText><Link href="#" className='nav-item'>Career</Link></ListItemText></ListItemButton></ListItem>
+        <ListItem disablePadding><ListItemButton sx={{ textAlign: 'center' }}><ListItemText><Link href="#" className='nav-item'>Articles</Link></ListItemText></ListItemButton></ListItem>
+        <ListItem disablePadding><ListItemButton sx={{ textAlign: 'center' }}><ListItemText><Link href="https://www.capco.com/" className='nav-item'>Capco.com</Link></ListItemText></ListItemButton></ListItem>
       </List>
     </Box>
   );
@@ -65,11 +63,11 @@ function NavBar(props) {
             </div>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
-            ))}
+            <Button><Link href="#" className='nav-item'>Capabilities</Link></Button>
+            <Button><Link href="#" className='nav-item'>Team</Link></Button>
+            <Button><Link href="#" className='nav-item'>Career</Link></Button>
+            <Button><Link href="#" className='nav-item'>Articles</Link></Button>
+            <Button><Link href="https://www.capco.com/" className='nav-item'>Capco.com</Link></Button>
           </Box>
         </Toolbar>
       </AppBar>
