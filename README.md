@@ -57,34 +57,29 @@ A central space to collate all Capco Engineering information sources. Aimed at c
 
 To get a local copy up and running follow these simple steps.
 
-### Local Dependencies
-
-A number of local dependencies are required.  To review the local dependencies:
-
-* When using MacOS run `make requirements`
-* otherwise run `cat Brewfile` to inspect the requirements
-
-If additional dependencies are required they should be added to `Brewfile`, for more details please review the official `brew bundle` documentation [here](https://github.com/Homebrew/homebrew-bundle).
-
 ### Local Setup
 
-This repo follows the principle of minimal manual setup of the local development environment.
+To install dependencies and run the app follow the below steps:
 
- A `make` target has been provided for simplicity ```make init```, the `make` file can be inspected for more details.
+* Navigate to /engineering-webstite
+* Run command "npm install"
+* Run command "npm start"
 
- ```shell
-# use the folder name as the repo name
-make init
+The app should run successfully on http://localhost:3000/
 
-# explicitly pass in the repo name (e.g. my-service)
-make repo=my-service init
-```
+### Testing
 
-If at any point the repo name needs to be changed then the `make rename` target can be called.
+* Navigate to /engineering-website
+* Run command "npm install"
 
-```shell
-make repo=my-service rename
-```
+To run local unit tests follow the below steps:
+
+* Run command "npm run test"
+* Select option a
+
+To run local e2e Playwright tests follow the below steps:
+
+* Run command "npx playwright test"
 
 ## Usage
 
@@ -104,7 +99,7 @@ Contributions are what make the open source community such an amazing place to b
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+5. Open a Pull Request with at least one reviewer
 
 If you would like to contribute to any Capco Digital OSS projects please read:
 

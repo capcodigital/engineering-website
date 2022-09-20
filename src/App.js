@@ -1,11 +1,9 @@
-import './App.css';
+import Homepage from "./containers/Homepage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Capco Engineering Website
-      </header>
+    <div>
+      <Homepage />
     </div>
   );
 }
