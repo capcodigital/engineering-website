@@ -69,11 +69,17 @@ The app should run successfully on http://localhost:3000/
 
 ### Testing
 
+* Navigate to /engineering-website
+* Run command "npm install"
+
 To run local unit tests follow the below steps:
 
-* Navigate to /engineering-webstite
 * Run command "npm run test"
 * Select option a
+
+To run local e2e Playwright tests follow the below steps:
+
+* Run command "npx playwright test"
 
 ## Usage
 

@@ -2,8 +2,9 @@ import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
   .footer-container {
+    display: grid;
     background-color: #000;
-    padding: 120px 124px;
+    padding: 120px 24px;
     color: #fff;
     justify-items: center;
     text-align: center;
@@ -12,8 +13,7 @@ const Wrapper = styled.div`
   .footer-circles {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 21px;
-    margin: 100px 597px;
+    column-gap: 6%;
     align-items: center;
     justify-items: center;
   }
