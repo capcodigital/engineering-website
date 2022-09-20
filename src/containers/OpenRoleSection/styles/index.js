@@ -2,29 +2,28 @@ import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
   .openroles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     background-color: #000;
     color: #fff;
-    height: auto;
-    display: flex;
-    padding-bottom: 70px;
+    padding: 0 24px 70px 24px;
+    @media screen and (max-width: 412px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .openroles-image {
-    width: 300px;
-    height: 250px;
+    grid-column: span 1;
+    min-height: 250px;
     background-color: grey;
-    margin-left: 24px;
-    float: left;
-    padding: 20px;
-    flex: 1; 
   }
 
   .openroles-text {
-    width: 450px;
-    margin-left: 24px;
-    float: left;
-    padding: 20px;
-    flex: 1;
+    grid-column: span 1;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
 `;

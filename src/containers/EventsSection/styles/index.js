@@ -2,30 +2,28 @@ import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
 .events-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 50px 24px;
     background-color: #fff;
     color: #000; 
-    height: auto;
-    display: flex; 
-    padding-bottom: 50px;
-    padding-top: 40px;
+    @media screen and (max-width: 412px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .events-text {
-    width: 450px;
-    margin: auto 0 auto 24px;
-    float: left;
-    padding: 20px;
-    flex: 1;
+    grid-column: span 1;
+    @media screen and (max-width: 412px) {
+        text-align: center;
+    }
 }
 
 .events-image {
-    width: 300px;
-    height: 250px;
+    grid-column: span 1;
+    min-height: 250px;
     background-color: grey;
-    margin-right: 24px;
-    float: left;
-    padding: 20px;
-    flex: 1;
 }
 
 
