@@ -4,7 +4,6 @@ import Wrapper from './styles';
 import { data } from '../../data/data';
 
 function ExploreSection() {
-  console.log(data);
   return (
     <Wrapper>
       <div className="explore-container">
