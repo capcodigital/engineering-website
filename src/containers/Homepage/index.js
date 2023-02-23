@@ -11,16 +11,16 @@ import FooterComponent from '../../components/FooterComponent';
 function Home() {
   return (
     <div>
-        <NavBar />
-        <HeroComponent />
-        <ExploreSection />
-        <OpenRoleSection/>
-        <EventSection/>
-        <CultureSection />
-        <ContactSection />
-        <FooterComponent />
+      <NavBar />
+      <HeroComponent />
+      <ExploreSection />
+      <OpenRoleSection />
+      <EventSection />
+      <CultureSection />
+      <ContactSection />
+      <FooterComponent />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

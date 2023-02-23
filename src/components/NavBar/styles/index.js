@@ -1,5 +1,5 @@
-import styled from "styled-components/macro";
-import { Drawer } from "@mui/material";
+import styled from 'styled-components/macro';
+import { Drawer } from '@mui/material';
 
 export const Wrapper = styled.div`
   .logo-container {
@@ -72,4 +72,4 @@ export const StyledDrawer = styled(Drawer)`
       color: #18A0FB;
     }
   }
-`
+`;
