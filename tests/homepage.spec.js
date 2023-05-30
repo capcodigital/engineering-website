@@ -13,7 +13,6 @@ test('homepage has Capco Engineering in title and capco.com link linking to the 
   await expect(capcoUrl).toBeTruthy();
   // console.log(capcoUrl);
 
-
   // Expect an attribute "to be strictly equal" to the value.
   // await expect(capcoUrl).toHaveAttribute('href', '');
 
@@ -21,7 +20,7 @@ test('homepage has Capco Engineering in title and capco.com link linking to the 
 
   // Click the get started link.
   // await capcoUrl.click();
-  
+
   // Expects the URL to contain intro.
   // await expect(page).toHaveURL(/.*capco/);
 });
