@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentComponent from '../../components/ContentComponent';
-import { eventData } from '../../data/data';
-import Wrapper from './styles';
+import eventData from '../data/data';
+import Wrapper from '../styles';
 
 function EventSection() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentComponent from '../../components/ContentComponent';
-import Wrapper from './styles';
-import { data } from '../../data/data';
+import Wrapper from '../styles';
+import data from '../data/data';
 
 function ExploreSection() {
   return (

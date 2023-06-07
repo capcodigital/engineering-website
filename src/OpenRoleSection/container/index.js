@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentComponent from '../../components/ContentComponent';
-import { roleData } from '../../data/data';
-import Wrapper from './styles';
+import roleData from '../data/data';
+import Wrapper from '../styles';
 
 function OpenRoleSection() {
   return (
