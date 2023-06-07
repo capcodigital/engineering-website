@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
 import React from 'react';
-import Wrapper from './styles';
+import Wrapper from '../styles';
 
 function CultureSection() {
   return (
